@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+  outline: none;
+  text-decoration: none;
+}
+
+body{
+    background: rgb(24,24,27); 
+
+}
+
+.new-container{
+
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    
+}
+
+.container{
+
+    max-width: 700px;
+    width: 100%;
+    background-color: #27272a;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+    
+}
+
+.logo{
+  
+    text-align: center;
+   
+}
+  
+.logo i{
+
+    color: rgb(243, 106, 106);
+    font-size: 28px;
+    margin-right: 3px;
+}
+  
+.logo-title{
+    
+    color: white;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.container .title{
+
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    color: rgb(243, 106, 106);
+    font-weight: 550;
+    transition: all .2s;
+    
+}
+.container .title::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 50px;
+    border-radius: 5px;
+    background: linear-gradient(135deg, rgb(243, 106, 106),rgb(214, 120, 120));
+    transition: all .2s;
+}
+
+.content form .user-details{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 12px 0;
+  
+
+}
+
+form .user-details .input-box{
+
+    margin-bottom: 15px;
+    width: 70%;
+
+}
+  
+  form .input-box span.details{
+
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+    color: rgb(243, 106, 106);
+    font-weight: 520;
+
+}
+  
+  .user-details .input-box input{
+
+    height: 45px;
+    width: 100%;
+    outline: none;
+    font-size: 16px;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+    background-color: rgb(235, 235, 235);
+
+}
+
+.user-details .input-box input:focus{
+    border-color:rgb(243, 106, 106);
+  }
+  
+  .user-details .input-box input:valid{
+    border-color: rgb(0, 255, 21);
+  }
+  
+  .user-details .input-box input:invalid{
+    border-color: red;
+
+  }
+
+.info-user-details{
+
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-user-details .checkme input{
+
+    width: 15px;
+    height: 15px;
+    color: rgb(243, 106, 106);
+   
+}
+
+.info-user-details input:hover{ cursor: pointer;}
+
+.info-user-details span{
+
+    color: white;
+    margin-left: 5px;
+
+}
+
+.info-user-details a {
+
+    color: rgb(243, 106, 106);
+    font-size: 16px;
+
+}
+
+.button{
+
+    width: 70%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.button input{
+
+    margin: 35px 0px 15px 0px;
+    width: 100%;
+    height: 45px;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    color: white;
+    background-color: rgb(243, 106, 106);
+    transition: all .2s;
+    font-size: 16px;
+
+}
+
+.button input:hover{
+
+    background-color:  rgb(245, 120, 120);
+    cursor: pointer;
+
+}
+
+.info-user-details-2 a{
+
+    color: rgb(243, 106, 106);
+    transition: all .2s; 
+
+}
+
+.info-user-details-2 a:hover{
+
+    color: rgb(245, 120, 120);
+
+}
+
+
+@media(max-width: 584px){
+    .container{
+     max-width: 100%;
+   }
+
+    form .user-details .input-box{
+
+    margin-bottom: 15px;
+    width: 70%;
+ 
+    }
+
+    .info-user-details{
+        flex-direction: column;
+        margin-left: 25px;
+        
+    }
+    
+    .info-user-details input{
+        margin-top: 10px;
+    }
+    
+    .info-user-details a{
+        margin-top: 10px;
+    }
+
+    .button{
+        width: 70%;
+    }
+}
+

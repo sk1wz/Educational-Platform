@@ -1,0 +1,27 @@
+/* Блоки для анимации js  */
+
+/* nav  */
+.nav-animation{opacity: 0;}
+
+/*  блок header */
+.header-animation{opacity: 0;transition: opacity 4s ease, transform 3s ease;}
+
+/* блок card price  */
+.price-animation{ opacity: 0;transition: opacity 3s ease, transform 3s ease; }
+
+/* блок mini-card-analitical */
+.card-analitical-animation{ opacity: 0; transition: opacity 3s ease, transform 3s ease;}
+
+.plus-animation{opacity: 0; transition: opacity 3s ease, transform 3s ease;}
+
+
+/* Глобальная переменная */
+.animation-show{
+    opacity: 1;
+    
+
+  }
+.animation-show2{
+    opacity: 1;
+    transition: .2s;
+}

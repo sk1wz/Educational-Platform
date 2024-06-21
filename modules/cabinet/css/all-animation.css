@@ -1,0 +1,5 @@
+.nav-animation{opacity: 0;}
+.animation-show2{
+    opacity: 1;
+    transition: .2s;
+}

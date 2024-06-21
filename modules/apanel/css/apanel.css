@@ -1,0 +1,529 @@
+/* imports */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+}
+
+
+::-webkit-scrollbar{
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #181818;
+}
+  
+::-webkit-scrollbar-thumb {
+    background-color:rgb(243, 106, 106);
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #18181B;
+}
+
+button{
+    border: none;
+
+}
+/*nav*/
+nav{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 28px 12%;
+    transition: all .50s ease;
+    background-color: rgb(24,24,27);
+
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo i{
+    color: rgb(243, 106, 106);
+    font-size: 28px;
+    margin-right: 3px;
+}
+
+.logo span{
+    color: white;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+ul , li{
+    list-style: none;
+}
+
+.nav-links{
+    position: absolute;
+    top: 100%;
+    right: 2%;
+    width: 270px;
+    height: 100px;
+    display: none;
+    background-color: #424244;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 10px;
+    transition: all .5s ease;
+    z-index: 1000;
+}
+
+.nav-links a{
+    display: block;
+    margin: 12px 0;
+    padding: 0px 25px;
+    color: white;
+    
+}
+
+#menu-icon{
+    display: block;
+    color: rgb(243, 106, 106);
+    font-size: 24px;
+
+}
+
+.nav-links a.activate{
+    color: white;
+
+}
+
+.nav-links.open{
+    display: flex;
+ 
+  
+}
+
+
+.nav-links a:hover{
+    color: rgb(206, 199, 199);
+}
+
+.nav-btn{
+    display: flex;
+    align-items: center;
+
+}
+
+.nav-btn a{
+    margin-right: 25px;
+    margin-left: 10px;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all .50s ease;
+}
+
+
+.user{
+    display: flex;
+    align-items: center;
+}
+
+.user i{
+    color: rgb(243, 106, 106);
+    font-size: 28px;
+    margin-right: 7px;
+}
+
+#menu-icon:hover{
+    cursor: pointer;
+}
+
+
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+    padding: 5rem 2rem;
+    padding-top: 100px;
+}
+.stat-panel{
+    width: 100%;
+    height: 100%;
+}
+.stat-panel h1{
+    color: rgb(243, 106, 106);
+    font-size: 28px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.stat{
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    flex-wrap: wrap;
+   
+}
+.card-stat{
+    width: 300px;
+    height: 200px;
+    background-color: #322e3a;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    transition: all .5s;
+}
+
+/*online*/
+
+.card-stat-online:hover{
+    box-shadow: 0px 0px 10px 20px rgba(121, 100, 236 , 0.2);
+}
+
+.card-stat-online p{
+    padding: 10px 15px;
+    font-size: 20px;
+    color: rgb(121, 100, 236);
+    font-weight: 550;
+}
+.card-stat-online .inner{
+    padding: 20px 15px;
+    font-size: 20px;
+    color: rgb(121, 100, 236);
+    font-weight: 550;
+    font-size: 30px;
+}
+.card-stat-online .abs-line{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    background-color: rgb(121, 100, 236);
+}
+
+/*users*/
+.card-stat-users:hover{
+    box-shadow: 0px 0px 10px 20px rgba(148, 63, 204 , 0.2);
+}
+
+.card-stat-users p{
+    padding: 10px 15px;
+    font-size: 20px;
+    color: rgb(148, 63, 204);
+    font-weight: 550;
+}
+.card-stat-users .inner{
+    padding: 20px 15px;
+    font-size: 20px;
+    color: rgb(148, 63, 204);
+    font-weight: 550;
+    font-size: 30px;
+}
+.card-stat-users .abs-line{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    background-color: rgb(148, 63, 204);
+}
+ /* messages  */
+ .card-stat-messages:hover{
+    box-shadow: 0px 0px 10px 20px rgba(50, 227, 233, 0.2);
+}
+
+.card-stat-messages  p{
+    padding: 10px 15px;
+    font-size: 20px;
+    color: rgb(48, 201, 206);
+    font-weight: 550;
+}
+.card-stat-messages .inner{
+    padding: 20px 15px;
+    font-size: 20px;
+    color: rgb(48, 201, 206);
+    font-weight: 550;
+    font-size: 30px;
+}
+.card-stat-messages  .abs-line{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    background-color: rgb(48, 201, 206);
+}
+
+/* message close */
+
+.card-stat-messages-close:hover{
+    box-shadow: 0px 0px 10px 20px rgba(213, 224, 55, 0.2);
+}
+
+.card-stat-messages-close  p{
+    padding: 10px 15px;
+    font-size: 20px;
+    color: rgb(213, 224, 55);
+    font-weight: 550;
+}
+.card-stat-messages-close .inner{
+    padding: 20px 15px;
+    font-size: 20px;
+    color: rgb(213, 224, 55);
+    font-weight: 550;
+    font-size: 30px;
+}
+.card-stat-messages-close .abs-line{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    background-color: rgb(213, 224, 55);
+}
+
+td > i{
+    padding: 10px;
+}
+td >i:hover{
+cursor: pointer;
+}
+
+
+/* all-users */
+.all-users{
+    height: 390px;
+    width: 100%;
+    position: relative;
+    margin-top: 100px;
+    
+}
+.all-users h1{
+    color: rgb(243, 106, 106);
+    font-size: 28px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.list-users{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+.list-users table{
+    border: 3px solid #322e3a;
+    background-color: #322e3a;
+    text-align: center;
+    width: 100%;
+    border-radius: 10px;
+    
+}
+.list-users th{
+    padding: 5px;
+    border: 1px solid #403a4d;
+    color: palegreen;
+}
+
+.list-users td{
+    border: 1px solid #403a4d;
+    color: palegreen;
+    padding: 10px;
+}
+
+
+/* all-ques */
+.all-ques{
+    height: 390px;
+    width: 100%;
+    margin-top: 100px;
+    position: relative;
+
+}
+
+.all-ques h1{
+    color: rgb(243, 106, 106);
+    font-size: 28px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.list-ques{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+   
+}
+
+.list-ques table{
+    border: 3px solid #322e3a;
+    background-color: #322e3a;
+    text-align: center;
+    width: 100%;
+    border-radius: 10px;
+
+}
+
+.list-ques th{
+    padding: 5px;
+    border: 1px solid #403a4d;
+    color: plum;
+  
+}
+.list-ques td {
+    border: 1px solid #403a4d;
+    color: plum;
+    padding: 10px;
+}
+
+.list-ques td a{
+    color: plum;
+}
+
+/* admin-action  */
+.admin-action{
+    margin-top: 100px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.admin-action h1{
+    color: rgb(243, 106, 106);
+    font-size: 28px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.actions{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2em;
+    color: rgb(255, 185, 87);
+}
+
+/* base  */
+.base{
+    border-bottom: 2px dotted  rgb(255, 185, 87);
+    position: relative;
+    height: auto;
+}
+
+.base form{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    margin: 0 auto;
+    height: 500px;
+    
+}
+.base form input{
+    background-color: #333;
+    padding: 15px;
+    width: 100%;
+    font-size: 20px;
+    color: rgb(255, 185, 87);
+    cursor: pointer;
+    border-radius: 8px;
+    
+}
+.base form textarea{
+    background-color: #333;
+    width: 100%;
+    height: 100px;
+    font-size: 20px;
+    color: rgb(255, 185, 87);
+    cursor: pointer;
+    padding: 10px;
+    resize: none;
+}
+
+.course{
+    border-bottom: 2px dotted  rgb(255, 185, 87);
+    margin-top: 100px;
+}
+
+.course form {
+
+    width: 100%;
+    margin: 0 auto;
+}
+
+.input1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.course form input{
+    background-color: #333;
+    padding: 15px;
+    width: 100%;
+    font-size: 20px;
+    color: rgb(255, 185, 87);
+    cursor: pointer;
+    border-radius: 8px;
+    
+}
+.course form textarea{
+    background-color: #333;
+    width: 100%;
+    height: 100px;
+    font-size: 20px;
+    color: rgb(255, 185, 87);
+    cursor: pointer;
+    padding: 10px;
+    resize: none;
+}
+
+
+/* adaptive */
+.nav-animation{opacity: 0;}
+.animation-show2{
+    opacity: 1;
+    transition: .2s;
+}
+
+
+
+@media(width < 1280px){
+    nav{
+        padding: 30px 2%;
+        transition: .2s;
+    }
+
+}
+
+@media(width <1000px){
+    .stat{
+        justify-content: left;
+    }
+}
+@media(width < 850px){
+.actions{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    justify-content: center;
+    text-align: center;
+}
+}
+@media (width < 600px){
+
+    .logo span{
+        color: white;
+        font-size: 1.1em;
+        font-weight: 500;
+    }
+  
+
+}

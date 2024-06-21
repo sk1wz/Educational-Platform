@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 10px;
+  font-family: 'Poppins', sans-serif;
+  background-color: #18181B;
+}
+
+::-webkit-scrollbar{
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #181818;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color:rgb(243, 106, 106);
+}
+
+/* menu*/
+nav{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  padding: 28px 12%;
+  transition: all .50s ease;
+  background-color: rgb(24,24,27);
+
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+}
+
+.logo i{
+  color: rgb(243, 106, 106);
+  font-size: 28px;
+  margin-right: 3px;
+}
+.blur2{
+  position: absolute;
+  box-shadow: 0 0 1000px 50px rgb(230, 125, 125);
+  z-index: -100;
+  left: 0;
+  top: 40%;
+}
+
+
+.logo span{
+  color: white;
+  font-size: 2em;
+  font-weight: 600;
+}
+
+ul , li{
+  list-style: none;
+}
+
+.nav-links{
+  position: absolute;
+  top: 100%;
+  right: 2%;
+  width: 270px;
+  height: 305px;
+  display: none;
+  /* background-color: rgb(243, 106, 106); */
+  background-color: #424244;
+  flex-direction: column;
+  justify-content: flex-start;
+  border-radius: 10px;
+  transition: all .50s ease;
+  z-index: 1000;
+}
+
+.nav-links a{
+  display: block;
+  margin: 12px 0;
+  padding: 0px 25px;
+  transform: all .50s ease;
+  color: white;
+}
+
+#menu-icon{
+  display: block;
+  color: rgb(243, 106, 106);
+  font-size: 24px;
+}
+
+.nav-links a.activate{
+  color: white;
+}
+
+.nav-links.open{
+  display: flex;
+ 
+}
+
+.nav-links a:hover{
+  color: rgb(206, 199, 199);
+}
+
+.nav-btn{
+  display: flex;
+  align-items: center;
+}
+
+.nav-btn a{
+  margin-right: 25px;
+  margin-left: 10px;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: all .50s ease;
+}
+
+.user{
+  display: flex;
+  align-items: center;
+}
+
+.user i{
+  color: rgb(243, 106, 106);
+  font-size: 28px;
+  margin-right: 7px;
+}
+
+
+.btn{
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: rgb(243, 106, 106);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover{
+  background-color: rgb(241, 137, 137);
+}
+
+#menu-icon:hover{
+  cursor: pointer;
+}
+.container{
+  max-width: 1200px;
+  margin: auto;
+  padding: 5rem 2rem;
+  padding-top: 100px;
+}
+
+.container h1{
+  color: rgb(243, 106, 106);
+  text-align: center;
+  font-size: 30px;
+}
+
+form { max-width:420px; margin:50px auto; }
+
+.feedback-input {
+  color:white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border:2px solid #CC6666;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width:100%;
+  box-sizing: border-box;
+  outline:0;
+}
+
+.feedback-input:focus { border:2px solid #CC4949; }
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
+}
+
+[type="submit"] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  width: 100%;
+  background:#CC6666;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:white;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+[type="submit"]:hover { background:#CC4949; }
+
+#message{
+  align-items: center;
+  background-color: green;
+  color: #fff;
+  width: 500px;
+  height: 100px;
+  border-radius: 10px;
+  transition: all .5s;
+  position: fixed;
+  top: 18%;
+  left: 50%;
+  z-index: 10;
+  text-align: center;
+  transform: translate(-50%, -50%);
+
+}
+.msg{
+  padding-top: 40px;
+}
+@media(width < 1280px){
+  nav{
+      padding: 30px 2%;
+      transition: .2s;
+  }
+
+}
+
+
+@media(width < 600px){
+  .logo span{
+      color: white;
+      font-size: 1.2em;
+      font-weight: 500;
+
+  }
+}
