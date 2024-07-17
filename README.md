@@ -1,7 +1,8 @@
 # HTML5, CSS3, PHP, JavaScript
 Проект "Образовательная платформа FirstCourses" - полностью готовый продукт, со следующим функционалом: со стороны пользователей реализовано: возможность зарегистрироваться/авторизоваться, личный кабинет пользователей, статистика, просмотр курсов/теории и др. со стороны администратора реализовано: админ-панель с возможность просматривать статистику по сайту, создавать/удалять курсы/теорию, удалять пользователей с сайта(легко интегрировать систему блокировки и др.).
-Frontend - HTML5, CSS3, JavaScript.
-Backend - PHP, JQuery.
+
+# Frontend - HTML5, CSS3, JavaScript.
+# Backend - PHP, JQuery.
 ![image](https://github.com/sk1wz/Educational_Platform/assets/78929376/c3b6f385-d08b-4e9d-a416-99c7b87736c6)
 ![image](https://github.com/user-attachments/assets/a8860a2e-41b6-4749-9ad1-9230fb3ab26d)
 ![image](https://github.com/user-attachments/assets/44f21221-3478-4abf-8c49-df72f62f8a8a)
